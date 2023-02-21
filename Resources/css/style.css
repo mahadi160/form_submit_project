@@ -1,0 +1,175 @@
+/*===============================*/
+/* BASIC SETUP */
+/*===============================*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+    font-size: 1.6rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* HEADEING */
+
+h1 {
+    font-size: 4.2rem;
+    color: #fff;
+}
+:focus {
+    outline: 0;
+}
+
+/*===============================*/
+/* REUSABLE COMPONENTS*/
+/*===============================*/
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+section {
+    padding: 8rem 0;
+}
+
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    height: .4rem;
+    background: #fff;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 2rem;  
+}
+h3 {
+    font-size: 2.4rem; 
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+}
+h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+}
+.box {
+    padding: 1%;
+}
+.box p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: #fff;
+}
+/* Paragraph */
+.lethal-description {
+    font-size: 1.8rem;
+    width: 60%;
+    margin: auto;
+    line-height: 3rem;
+}
+
+/* button */
+.btn:link,
+.btn:visited,
+.btn {
+    background: #333;
+    border: .1rem solid #000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 6rem;
+    border-radius: .3rem;
+    display: inline-block;
+    margin-top: 4.5rem;
+    font-size: 1.6rem;
+}
+
+
+/*===============================*/
+/* CONTACT SECTION */
+/*===============================*/
+.contact {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(60, 84, 153, 0.9)), to(rgba(60, 84, 153, 0.9))), url(img/contact-bg.jpg) no-repeat center center / cover;
+    background: linear-gradient( rgba(60, 84, 153, 0.9), rgba(60, 84, 153, 0.9)), url(img/contact-bg.jpg) no-repeat center center / cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contact h2::after {
+    background: #273a71;
+}
+.contact .lethal-description {
+    color: #fff;
+}
+.contact form {
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    background: #273a71;
+    width: 100%;
+    border: .1rem solid #273a71;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    color: #fff;
+    margin: .5rem 0;
+}
+.contact textarea {
+    height: 20rem;
+    
+}
+.contact form ::-webkit-input-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.contact form :-ms-input-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+.contact form ::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.contact .btn-submit {
+    background: #30bae7;
+    border: 0;
+    border-bottom: .3rem solid #299ec5;  
+}
+.contact .btn-submit:hover {
+    cursor: pointer;
+}
+
+
